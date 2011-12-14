@@ -1,12 +1,10 @@
 /**
  * iPad Sidebar Slider
  * Created on June 16th, 2010
- * 
- * see also: MediaWiki:Adjust4iPad.js, https://bugzilla.wikimedia.org/show_bug.cgi?id=14501
- * TODO: support RTL-Languages, provide as a gadget
  *
  * @rev 15 (2011-10-16)
  * @author Krinkle
+ * @source: [[commons:MediaWiki:IPadSidbarSlider.js]]
  */
 $(function(){
 
@@ -25,9 +23,9 @@ $(function(){
 	}
 
 	//Initalize
-	$('#mw-panel').hide();
-	$('#left-navigation').css( 'left', '1em' );
-	$('#content,#footer').css( 'marginLeft', '1em' );
+	//$('#mw-panel').hide();
+	//$('#left-navigation').css( 'left', '1em' );
+	//$('#content,#footer').css( 'marginLeft', '1em' );
 	$('body').append( '<div id="kr-panel-toggle" style="width:28px;height:28px;background:white url(//upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Nuvola_single_chevron_right.svg/21px-Nuvola_single_chevron_right.svg.png) center no-repeat;border:2px solid #f3f3f3;position:fixed;left:-5px;top:30%;-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px"></div>' );
 	$('#kr-panel-toggle').hover( function(){
 		$(this).css( 'cursor', 'pointer' );
