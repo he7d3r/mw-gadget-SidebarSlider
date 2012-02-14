@@ -14,13 +14,13 @@ $(function(){
 		$('#mw-panel').animate( {width: 'hide'} );
 		$('#left-navigation').animate( {'left' : '1em'} );
 		$('#content,#footer').animate( {'marginLeft' : '1em'} );
-	}
- 
+	};
+
 	window.iPadSidebarCustom_in = function(){
 		$('#mw-panel').animate( {width: 'show'} );
 		$('#left-navigation').animate( {'left' : '10em'} );
 		$('#content,#footer').animate( {'marginLeft' : '10em'} );
-	}
+	};
 
 	//Initalize
 	//$('#mw-panel').hide();
