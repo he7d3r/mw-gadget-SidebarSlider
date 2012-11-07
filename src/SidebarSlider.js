@@ -5,18 +5,22 @@
  * @rev 15 (2011-10-16)
  * @author Krinkle
  * @source: [[commons:MediaWiki:IPadSidbarSlider.js]]
+ * @tracking: [[Special:GlobalUsage/User:Helder.wiki/Tools/SidebarSlider.js]] ([[File:User:Helder.wiki/Tools/SidebarSlider.js]])
  */
+/*jslint browser: true, white: true*/
+/*global jQuery, mediaWiki */
+( function ( $ ) {
+'use strict';
+
 $(function(){
 
 	//if (navigator.userAgent.match(/iPad/i) == null) return; //Dont ignore non-iPads (yet)
 
-	window.iPadSidebarCustom_out = function(){
+	var iPadSidebarCustom_out = function(){
 		$('#mw-panel').animate( {width: 'hide'} );
 		$('#left-navigation').animate( {'left' : '1em'} );
 		$('#content,#footer').animate( {'marginLeft' : '1em'} );
-	};
-
-	window.iPadSidebarCustom_in = function(){
+	}, iPadSidebarCustom_in = function(){
 		$('#mw-panel').animate( {width: 'show'} );
 		$('#left-navigation').animate( {'left' : '10em'} );
 		$('#content,#footer').animate( {'marginLeft' : '10em'} );
@@ -35,11 +39,14 @@ $(function(){
 	$('#kr-panel-toggle').click( function(){
 		if ( $(this).hasClass( 'go-in' ) ){
 			iPadSidebarCustom_in();
-			$(this).removeClass( 'go-in' ).addClass( 'go-out' ).animate( {'left' : '9em'} ).css( 'background-image', 'url(//upload.wikimedia.org/wikipedia/commons/thumb/8/8e/1leftarrow.png/21px-1leftarrow.png)' );
+			$(this).removeClass( 'go-in' ).addClass( 'go-out' ).animate( {'left' : '9em'} )
+				.css( 'background-image', 'url(//upload.wikimedia.org/wikipedia/commons/thumb/8/8e/1leftarrow.png/21px-1leftarrow.png)' );
 		} else {
 			iPadSidebarCustom_out();
-			$(this).removeClass( 'go-out' ).addClass( 'go-in' ).animate( {'left' : '-5px'} ).css( 'background-image', 'url(//upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Nuvola_single_chevron_right.svg/21px-Nuvola_single_chevron_right.svg.png)') ;
-    }
-  });
-
+			$(this).removeClass( 'go-out' ).addClass( 'go-in' ).animate( {'left' : '-5px'} )
+				.css( 'background-image', 'url(//upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Nuvola_single_chevron_right.svg/21px-Nuvola_single_chevron_right.svg.png)') ;
+		}
+	});
 });
+
+}( jQuery ) );
