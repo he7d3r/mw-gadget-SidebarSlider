@@ -3,7 +3,9 @@
  * Created on June 16th, 2010
  *
  * @rev 15 (2011-10-16)
- * @author Krinkle
+ * @author: Krinkle
+ * @author: Helder (https://github.com/he7d3r)
+ * @license: CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0/>
  * @source: [[commons:MediaWiki:IPadSidbarSlider.js]]
  * @tracking: [[Special:GlobalUsage/User:Helder.wiki/Tools/SidebarSlider.js]] ([[File:User:Helder.wiki/Tools/SidebarSlider.js]])
  */
