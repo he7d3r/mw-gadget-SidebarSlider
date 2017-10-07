@@ -42,7 +42,7 @@ window.iPadSidebarCustomIn = function () {
 $('#mw-panel').hide();
 $('#left-navigation').css('left', '1em');
 $('#content,#footer').css('marginLeft', '1em');
-$('body').append('<div id="kr-panel-toggle" style="width:28px;height:28px;background:white url(//upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Nuvola_single_chevron_right.svg/21px-Nuvola_single_chevron_right.svg.png) center no-repeat;border:2px solid #f3f3f3;position:fixed;left:-5px;top:30%;-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px"></div>');
+$('body').append('<div id="kr-panel-toggle" style="width:28px;height:28px;background:white url(//upload.wikimedia.org/wikipedia/commons/thumb/e/ee/1rightarrow_blue.svg/21px-1rightarrow_blue.svg.png) center no-repeat;border:2px solid #f3f3f3;position:fixed;left:-5px;top:30%;-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px"></div>');
 $('#kr-panel-toggle').on('mouseenter', function () {
 	$(this).css('cursor', 'pointer');
 }).on('mouseleave', function () {
@@ -53,7 +53,7 @@ $('#kr-panel-toggle').click(function () {
 		iPadSidebarCustomOut();
 		$(this).removeClass('go-out').addClass('go-in').animate({
 			'left': '-5px'
-		}).css('background-image', 'url(//upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Nuvola_single_chevron_right.svg/21px-Nuvola_single_chevron_right.svg.png)');
+		}).css('background-image', 'url(//upload.wikimedia.org/wikipedia/commons/thumb/e/ee/1rightarrow_blue.svg/21px-1rightarrow_blue.svg.png)');
 	} else {
 		iPadSidebarCustomIn();
 		$(this).removeClass('go-in').addClass('go-out').animate({
